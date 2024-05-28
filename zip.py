@@ -77,7 +77,7 @@ def count_tokens(text_data):
     return len(tokens)
 
 # Specify the path to your zip file
-zip_file_path = '/Users/amirhossain/Desktop/Cornell/Essay-app/Essay-app-main (2).zip'
+zip_file_path = '/Users/amirhossain/Desktop/Cornell/Essay-app/Essay-app-main (3).zip'
 
 # Extract text from the zip file
 with zipfile.ZipFile(zip_file_path, 'r') as zip_file:
