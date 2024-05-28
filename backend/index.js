@@ -1,9 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const { generateQuestions, generateEssay } = require('./openai');
 
 const app = express();
 app.use(express.json());
-
+app.use(cors());  // Enable CORS for all route
 const data = {};
 
 app.post('/generate-questions', async (req, res) => {

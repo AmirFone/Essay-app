@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 const QuestionForm = () => {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
   const router = useRouter();
-  const { id } = router.query;
-
+  // const { id } = router.query;
   useEffect(() => {
     const fetchQuestions = async () => {
       const response = await fetch(`/api/generate?id=${id}`);
@@ -24,15 +23,15 @@ const QuestionForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const response = await fetch('/api/generate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id, answers }),
-    });
-    const data = await response.json();
-    router.push(`/essay?id=${data.id}`);
-  };
+	e.preventDefault();
+	const response = await fetch('/api/generate', {
+	  method: 'POST',
+	  headers: { 'Content-Type': 'application/json' },
+	  body: JSON.stringify({ id, answers }),
+	});
+	const data = await response.json();
+	router.push(`/essay?id=${data.id}`);
+      };
 
   return (
     <form onSubmit={handleSubmit}>
