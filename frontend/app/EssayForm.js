@@ -1,5 +1,7 @@
+"use client";
 import React, { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
+import styles from './HomePage.module.css'; // Ensure you're importing the styles
 
 const EssayForm = () => {
   const [context, setContext] = useState('');
@@ -19,15 +21,15 @@ const EssayForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
+      <label className={styles.formLabel}>
         Context:
-        <input type="text" value={context} onChange={(e) => setContext(e.target.value)} />
+        <input type="text" value={context} onChange={(e) => setContext(e.target.value)} className={styles.inputCustom} />
       </label>
-      <label>
+      <label className={styles.formLabel}>
         Prompt:
-        <input type="text" value={prompt} onChange={(e) => setPrompt(e.target.value)} />
+        <input type="text" value={prompt} onChange={(e) => setPrompt(e.target.value)} className={styles.inputCustom} />
       </label>
-      <button type="submit">Generate Questions</button>
+      <button type="submit" className={styles.submitButton}>Generate Questions</button>
     </form>
   );
 };
