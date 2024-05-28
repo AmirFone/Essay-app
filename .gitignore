@@ -3,3 +3,4 @@ backend/node_modules
 frontend/node_modules
 my-essay-app/
 .trunk
+extracted_text.json
