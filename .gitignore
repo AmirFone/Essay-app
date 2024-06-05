@@ -4,3 +4,5 @@ frontend/node_modules
 my-essay-app/
 .trunk
 extracted_text.json
+.env
+.gitignore

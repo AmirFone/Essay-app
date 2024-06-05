@@ -28,7 +28,18 @@ def generate_questions_route():
 
     Response JSON:
     {
-        "questions": "The generated questions based on the context and prompt"
+    "id_questions": {
+        "0": "What is the main thesis or argument of the essay?",
+        "1": "What are the key points or subtopics that will be discussed?",
+        "2": "Can you provide specific evidence or examples to support your main argument?",
+        "3": "How does each paragraph contribute to the overall argument?",
+        "4": "Are there any counterarguments that need to be addressed?",
+        "5": "How does the introduction grab the reader's attention and set up the essay?",
+        "6": "What is the significance or importance of the topic being discussed?",
+        "7": "Have you included a clear topic sentence for each paragraph?",
+        "8": "Does the conclusion effectively summarize the main points and reiterate the thesis?",
+        "9": "Have you properly cited your sources and included a bibliography or works cited page?"
+    }
     }
     """
     context = request.json.get('context')
