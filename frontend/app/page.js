@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import EssayForm from './EssayForm';
 import styles from './HomePage.module.css'; // Import the CSS module

@@ -1,11 +1,15 @@
+// QuestionsPage.js
+"use client";
 import React from 'react';
 import QuestionForm from './QuestionForm';
 
-const QuestionsPage = () => {
+const QuestionsPage = ({ searchParams }) => {
+  const { id } = searchParams;
+
   return (
     <div>
       <h1>Answer the Questions</h1>
-      <QuestionForm />
+      <QuestionForm id={id} />
     </div>
   );
 };

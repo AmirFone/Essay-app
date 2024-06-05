@@ -1,32 +1,32 @@
 /* HomePage.module.css */
-.formTitle, .formLabel {
-	display: block;
-	color: #000; /* Black color for text */
-	font-size: 16px;
-	margin-bottom: 8px;
-      }
-      
-      .inputCustom {
-	display: block;
-	width: 100%;
-	padding: 8px;
-	border: 2px solid #334155; /* Dark slate border for contrast */
-	border-radius: 5px;
-	color: #000; /* Black text color for input */
-	margin-bottom: 16px; /* Spacing between inputs */
-      }
-      
-      .submitButton {
-	background-color: #0ea5e9; /* Sky blue background */
-	color: white;
-	border: none;
-	border-radius: 5px;
-	padding: 10px 20px;
-	cursor: pointer;
-	transition: background-color 0.3s;
-      }
-      
-      .submitButton:hover {
-	background-color: #0284c7; /* Darker shade for hover effect */
-      }
-      
+.formTitle,
+.formLabel {
+  display: block;
+  color: #333; /* Dark text color for better contrast */
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.inputCustom {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ccc; /* Lighter border color */
+  border-radius: 5px;
+  color: #333; /* Dark text color for input */
+  margin-bottom: 16px; /* Spacing between inputs */
+}
+
+.submitButton {
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}

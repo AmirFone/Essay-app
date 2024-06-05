@@ -1,0 +1,44 @@
+/* QuestionForm.module.css */
+.question-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+      }
+      
+      .question-card {
+	background-color: #f8f9fa; /* Light background color */
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	text-align: center;
+      }
+      
+      .question-card h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+      }
+      
+      .button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+      }
+      
+      .next-button,
+      .submit-button {
+	background-color: #007bff; /* Blue background */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin: 0 10px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+      }
+      
+      .next-button:hover,
+      .submit-button:hover {
+	background-color: #0056b3; /* Darker shade for hover effect */
+      }
